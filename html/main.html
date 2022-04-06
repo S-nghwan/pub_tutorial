@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <title>Publish Tutorial</title>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script>
+            function clickFun(){
+                alert($("#input1").val())
+            }
+        </script>
+        <style>
+            li{
+                margin-top: -15px;
+            }
+        </style>
+    </header>
+    <body>
+        <h1>Publish Tutorial</h1>
+        <hr>
+        <h2>HTML 텍스트 요소</h2>
+        <h1 id="test1">h1: Wellcome!</h1>
+        <h2 id="test2">h2: Wellcome!</h2>
+        <h3 id="test3">h3: Wellcome!</h3>
+        <h4 id="test4">h4: Wellcome!</h4>
+        <h5 id="test5">h5: Wellcome!</h5>
+        <h6 id="test6">h6: Wellcome!</h6>
+        <p>이건 그냥 <mark>p 태그</mark></p>
+        <p>이건 그냥 <mark>p 태그</mark></p>
+        <p>p 태그는 위아래 margin값이 있네</p>
+        <hr>
+        <p>글자 찐하게 강조 <strong>strong 태그!</strong></p>
+        <p>글자 기울여서 강조 <em>em 태그!</em></p>
+        <p>글자 지움 표시 <del>strong 태그!</d></p>
+        <p>글자 밑줄쫙 표시 <ins>strong 태그!</ins></p><br>
+        <span>이건 <mark>span 태그</mark></span><br>
+        <span>이건 <mark>span 태그</mark></span><br><br>
+        <hr>
+        <table class="tb-2" summary="">
+            <thead>
+                <tr class="bg">
+                    <th style="width: 100px;">엔티티 문자</th>
+                    <th>엔티티 이름</th>
+                    <th>16진수 엔티티 숫자</th>
+                    <th>설명</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">&nbsp;</td>
+                    <td style="text-align: center;">&amp;nbsp;</td>
+                    <td style="text-align: center;">&amp;#160;</td>
+                    <td style="text-align: center;">줄 바꿈 없는 공백</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">&lt;</td>
+                    <td style="text-align: center;">&amp;lt;</td>
+                    <td style="text-align: center;">&amp;#60;</td>
+                    <td style="text-align: center;">보다 작은</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">&gt;</td>
+                    <td style="text-align: center;">&amp;gt;</td>
+                    <td style="text-align: center;">&amp;#62;</td>
+                    <td style="text-align: center;">보다 큰</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">&amp;</td>
+                    <td style="text-align: center;">&amp;amp;</td>
+                    <td style="text-align: center;">&amp;#38;</td>
+                    <td style="text-align: center;">AND 기호</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">"</td>
+                    <td style="text-align: center;">&amp;quot;</td>
+                    <td style="text-align: center;">&amp;#34;</td>
+                    <td style="text-align: center;">큰따옴표</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">'</td>
+                    <td style="text-align: center;">&amp;apos;</td>
+                    <td style="text-align: center;">&amp;#39;</td>
+                    <td style="text-align: center;">작은따옴표</td>
+                </tr>
+            </tbody>
+        </table>
+        <pre>
+--------------------------------------------------------------
+>> 이거는
+br을 안써도
+엔터만으로 줄내림이 되는
+pre 태그
+    들여쓰기도 그냥 출력되버리네 <<
+--------------------------------------------------------------
+</pre><br>
+        <hr>
+
+
+
+
+        <h2>HTML 기본 요소</h2>
+
+        <h3>HTML 스타일(Style)</h3>
+        <p>
+            배경색 변경: background-color, 글자색 변경: color, 글자 크기 변경: font-size:250%, 문단 정렬 변경: text-align:center
+        </p>
+        <p>
+            이미지로 배경화면: background="이미지 경로or주소", HTML 링크(Link),  href="/html/main.html"<br>
+            <pre>
+            target 속성
+                1. _blank	           링크로 연결된 문서를 새 창이나 새 탭에서 오픈.
+                2. _self	           링크로 연결된 문서를 현재 프레임(frame)에서 오픈. (기본설정)
+                3. _parent	           링크로 연결된 문서를 부모 프레임(frame)에서 오픈.
+                4. _top                    링크로 연결된 문서를 현재 창의 가장 상위 프레임(frame)에서 오픈.
+                5. 프레임(frame) 이름	   링크로 연결된 문서를 지정된 프레임(frame)에서 오픈.
+            </pre>
+        </p>
+        <p><span><</span>img src="이미지주소" alt="대체문자열"> alt는 이미지 로딩실패시 나오는 대체 문구</p>
+        <p><span><</span>form action="처리할페이지주소" method="get || post"><span><</span>/form <span>></span></p>
+        
+        <br><br>
+        <hr>
+        <h2><p>input Tag</p></h2>
+        <pre>
+        1. 텍스트 입력(text)
+
+        2. 비밀번호 입력(password)
+
+        3. 라디오 버튼(radio)
+
+        4. 체크박스(checkbox)
+
+        5. 파일 선택(file)
+
+        6. 선택 입력(select)
+
+        7. 문장 입력(textarea)
+
+        8. 버튼 입력(button)
+
+        9. 전송 버튼(submit)
+
+        10. 필드셋(fieldset)
+        </pre>        
+        <input type="range" id="value02" name="input02" value="50" min="0" max="100"><br>
+        <input id="input1" value="123" placeholder="입력해주세요"><br>
+        <input type="password" value="123456789"><br>
+        <input type="radio" name="test"> <input type="radio" name="test" checked="true"> <input type="radio" name="test" disabled="true"><br>
+        <input type="checkbox" checked="true"> <input type="checkbox" disabled="true"><br>
+        <input type="file" name="upload_file" accept="image/*"><br>
+        <input type="color"><br>
+        <input type="search" value="search!!!">
+        <input type="date">
+        <input type="time">
+        <select>
+            <option>1</option>
+            <option selected>2</option>
+            <option>3</option>
+        </select><br><br>
+
+        <!-- HTML5에서 추가된 기능 -->
+        <form action="/examples/media/request.php">
+            <input list="lectures" name="lecture">
+                <datalist id="lectures">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="JAVA">
+                    <option value="C++">
+                </datalist><br>
+            <input type="submit" value="전송">
+        </form>
+        <!------------------------>
+        <br><br>
+        <textarea>123</textarea><br>
+        <button onclick="clickFun()" value="test">test1</button>
+        <button onclick="" value="test">test2</button>
+        <button onclick="" value="test">test3</button>
+        <button onclick="" value="test">test4</button>
+        <input type="submit" value="전송">
+        <input type="reset"><br><br>
+        <fieldset>
+            fieldset 요소는 form 요소와 관련된 데이터들을 하나로 묶어주는 역할을 합니다.<br>
+            legend 요소는 fieldset 요소 안에서만 사용할 수 있으며, fieldset 요소의 제목을 나타냅니다.
+        </fieldset>
+        <fieldset>
+            <legend>fieldset예시) 입력 양식</legend>
+            이름 : <br>
+            <input type="text" name="username"><br>
+            이메일 : <br>
+            <input type="text" name="email"><br><br>
+            <input type="submit" value="전송">
+        </fieldset>
+        <br><br>
+
+        disabled와 readonly 차이: submit할때 disabled 항목은 제외됨, readonly는 초기값으로 전송됨<br>readonly는 onFocus Event 가능<br>
+        <input value="disabled" disabled onfocus="console.log('disable Focus')"> <input value="readonly" readonly onfocus="console.log('readonly Focus')">
+
+        <pre>
+            <h2>HTML5에서 추가된 input 요소의 속성</h2>
+            <ol style="margin-top: -43px; margin-bottom: -41px;">
+                <li>autocomplete</li>
+                <li>autofocus</li>
+                <li>form</li>
+                <li>formaction</li>
+                <li>formenctype</li>
+                <li>formmethod</li>
+                <li>formnovalidate</li>
+                <li>formtarget</li>
+                <li>height and width</li>
+                <li>list</li>
+                <li>min and max</li>
+                <li>multiple</li>
+                <li>pattern (정규식)</li>
+                <li>placeholder</li>
+                <li>required</li>
+                <li>step</li>
+            </ol>
+        </pre>
+        <a href="http://www.tcpschool.com/html/html5_element_inputattr">속성 설명 보기</a><br><br>
+
+    </body>
+</html>
